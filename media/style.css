@@ -785,10 +785,19 @@ body {
   }
   
   .discord {
-    background-color: #7289da; 
-    width: 155px;
     position: relative;
-    left: 32%;
+    left: 30%;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7289da;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
   }
   
 
@@ -805,7 +814,16 @@ body {
     }
     
     .discord {
-        padding: 0 30px;
+        /* display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #215fe4;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: background-color 0.3s, transform 0.3s; */
     }
   }
   
