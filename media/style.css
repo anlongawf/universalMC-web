@@ -799,6 +799,10 @@ body {
     font-weight: 500;
     transition: background-color 0.3s, transform 0.3s;
   }
+
+  .server {
+    background-color: #000;
+  }
   
 
   @media (max-width: 768px) {
