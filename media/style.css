@@ -200,7 +200,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .5) url('https://imgur.com/cGMLytH.png');
+    background: rgba(0, 0, 0, .5);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -583,7 +583,7 @@ body {
 
 
 .main3 {
-    background-color: var(--background1);
+    background-color: var(--background2);
     min-height: 10rem;
     width:100%;
     display: flex;
@@ -667,7 +667,7 @@ body {
     justify-content: center;
     padding: 16px;
     width:auto;
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>universalMC.net - Server Minecraft Sinh Tồn và SMP tại Việt Nam</title>
+    <link rel="icon" type="image/png" href="./media/image-removebg-preview.png">
+    <link rel="stylesheet" href="../media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header class="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="../media/image-removebg-preview.png" alt="logo"></a>
+      <a href="#main4" class="desktop_navbar_link scroll">Cộng đồng</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll">Tham gia ngay!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar" style="display: none;">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/image-removebg-preview.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <!-- <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a> -->
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Cộng đồng</a>
+          <!-- <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Liên hệ</a> -->
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Tham gia ngay!</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+</header>
+
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+	<ul class="cd-faq__categories">
+		<li><a class="cd-faq__category cd-faq__category-selected truncate" href="#smp">Máy chủ SMP?</a></li>
+		<li><a class="cd-faq__category truncate" href="#survival">Máy chủ sinh tồn thư giản và xây dựng?</a></li>
+	</ul> <!-- cd-faq__categories -->
+
+	<div class="cd-faq__items">
+		<ul id="smp" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Máy chủ SMP (FAQ)</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Bao lâu sẽ reset MAP?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Đối với World sẽ khoảng 15 - 30 ngày. <br>
+				Nether và The End sẽ 30 - 60 ngày. <br>
+				Chúng mình sẽ thông báo trước khi Reset một vài ngày.
+			</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Vì sao bọn mình lại Reset map thường xuyên như thế?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Vì sao nhiều lần mở server, mình rút ra kinh nghiệm mở một server lâu dài cần reset để cho việc dung lượng server không quá nặng để tránh ngốn quá nhiều tài nguyên máy chủ. <br>
+			Nếu máy chủ kéo dài liên tục vài tháng dung lượng các thế giới sẽ lên hàng trăm Gb vì vậy bọn mình không thể nào duy trì nổi.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Nếu reset map nhanh như vậy thì tốn công sức của người chơi?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>Đừng lo vì điều này nha, nếu bạn thích lối chơi xây dựng, song song với bọn mình vẫn có một cụm này cho bạn. Còn những vật phẩm cày cuốc của bạn, bạn hãy cất vào balo trước khi reset Map nha.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Làm thế nào để ủng hộ bọn mình?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>Để ủng hộ các bạn có thể mua các vật phẩm trong /shop!</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+		</ul> <!-- cd-faq__group -->
+
+		<ul id="survival" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Máy chủ SMP (FAQ)</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Bao lâu sẽ reset MAP?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Đối với World sẽ khoảng 15 - 30 ngày. <br>
+				Nether và The End sẽ 30 - 60 ngày. <br>
+				Chúng mình sẽ thông báo trước khi Reset một vài ngày.
+			</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Vì sao bọn mình lại Reset map thường xuyên như thế?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Vì sao nhiều lần mở server, mình rút ra kinh nghiệm mở một server lâu dài cần reset để cho việc dung lượng server không quá nặng để tránh ngốn quá nhiều tài nguyên máy chủ. <br>
+			Nếu máy chủ kéo dài liên tục vài tháng dung lượng các thế giới sẽ lên hàng trăm Gb vì vậy bọn mình không thể nào duy trì nổi.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Nếu reset map nhanh như vậy thì tốn công sức của người chơi?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>Đừng lo vì điều này nha, nếu bạn thích lối chơi xây dựng, song song với bọn mình vẫn có một cụm này cho bạn. Còn những vật phẩm cày cuốc của bạn, bạn hãy cất vào balo trước khi reset Map nha.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Làm thế nào để ủng hộ bọn mình?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>Để ủng hộ các bạn có thể mua các vật phẩm trong /shop!</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+		</ul> <!-- cd-faq__content -->
+
+
+
+	<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+  
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+</section> <!-- cd-faq -->
+<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script> 
+</body>
+</html>

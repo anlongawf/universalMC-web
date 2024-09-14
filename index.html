@@ -15,9 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <nav class="desktop_navbar">
       <a href="#"><img class="desktop_navbar_logo_img" src="media/image-removebg-preview.png" alt="logo"></a>
-      <!-- <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a> -->
-      <a href="#discord" class="desktop_navbar_link scroll">Cộng đồng</a>
-      <!-- <a href="#about" class="desktop_navbar_link scroll">Liên hệ</a> -->
+      <a href="#main4" class="desktop_navbar_link scroll">Cộng đồng</a>
       <div class="desktop_navbar_link2_div">
           <a href="#join" class="desktop_navbar_link2 scroll">Tham gia ngay!</a>
       </div>
@@ -49,32 +47,7 @@
         <a class="main1_logo_a" href="#">
           <img class="main1_logo" src="media/logo_large.png" alt="logo">
         </a>
-        <!-- <div class="main1_description">
-          <a>Minecraft,<br>like</a>
-          <a class="main1_actcent">already done before</a><a>.</a>
-        </div> -->
         <div class="main1_ipcopier_div">
-          <button class="main1_ipcopier" onclick="copyText()" type="button">
-            <span class="main1_ipcopier_text1">universalmc.net</span>
-            <br>
-            <span class="main1_ipcopier_text2">Nhấn để copy</span>
-          </button>
-          <script>
-            function copyText() {
-                navigator.clipboard.writeText
-            ("universalmc.net");
-                }
-            $(document).ready(function() {
-            $('.main1_ipcopier').click(function() {
-                var popup = $('<div>', { class: 'main1_popup' })
-                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
-                $(this).after(popup);
-                setTimeout(function() {
-                popup.remove();
-                }, 1000);
-            });
-            });
-        </script>
         </div>
         <a href="#more" class="scroll">
           <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
@@ -129,9 +102,9 @@
           </div>
         </div>
       </div>
-      <div class="main4">
+      <div class="main4" id="main4">
         <a class="headline">Cộng đồng!</a>
-        <div class="social-community">
+        <div class="social-community" id="social-community">
             <div class="main4_dc_div">
               <iframe class="main4_dc_widget" src="./media/card-3.png" width="450" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
               <div class="main4_dc_description_div">
@@ -142,68 +115,11 @@
                   <a href="https://m.me/j/AbaFGPAAyYcDD0Ta/" target="_blank" class="messenger main4_dc_button_a"><i class="fa-brands fa-facebook-messenger"></i> Messenger chat</a>
                 </div>     
                 <div class="social-foot">
-                <a href="" class="discord main4_dc_button_a" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="https://discord.gg/xbfgWX6H" class="discord main4_dc_button_a" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
                 </div>
             </div>
         </div>
         </div>
-      </div>
-      <!-- <div id="about"></div>
-      <div class="main5">
-        <a class="headline">Who we are</a>
-        <div class="main5_admin_div">
-          <div class="main5_admins_div main5_admins_dev_type2">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
-            <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
-              <a class="main5_admins_description_title" href="https://example.com">Owner Name</a>
-              <a class="main5_admins_description">Owner<br>description</a>
-            </div>
-          </div>
-          <div class="main5_admins_div main5_admins_dev_type1">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
-            <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
-              <a class="main5_admins_description_title" href="https://example.com">Admin Name</a>
-              <a class="main5_admins_description">Admin<br>description</a>
-            </div>
-          </div>
-        </div>
-        <div class="main5_supporter_div">
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 1</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 2</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 3</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 4</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div id="join"></div>
       <div class="main3">
         <a class="headline">Cách tham gia</a>
