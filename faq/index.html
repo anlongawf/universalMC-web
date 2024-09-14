@@ -11,41 +11,45 @@
     <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- Style CSS -->
+	<style>
+		.home-button {
+			width: 100%;
+			text-align: center;
+		}
+	
+	.home {
+		padding: 10px 20px; 
+		font-size: 16px; 
+		font-weight: bold; 
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #ffffff;
+		background-color: #007bff; 
+		border-radius: 5px; 
+		border: 2px solid #007bff;
+	}
+	
+		@media only screen and (min-width: 600px) {
+		.home {
+			display: none;
+		}
+	}
+	 </style>
 </head>
 <body>
-<header class="">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <nav class="desktop_navbar">
-      <a href="#"><img class="desktop_navbar_logo_img" src="../media/image-removebg-preview.png" alt="logo"></a>
-      <a href="#main4" class="desktop_navbar_link scroll">Cộng đồng</a>
-      <div class="desktop_navbar_link2_div">
-          <a href="#join" class="desktop_navbar_link2 scroll">Tham gia ngay!</a>
-      </div>
-    </nav>
-    <div class="mobile_navbar" style="display: none;">
-      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/image-removebg-preview.png" alt="logo"></a>
-      <div id="mobile_navbar_links">
-          <!-- <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a> -->
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Cộng đồng</a>
-          <!-- <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Liên hệ</a> -->
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Tham gia ngay!</a>
-        </div>
-        <div class="icon" onclick="mobile_navbar_link_hider()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <script>
-            function mobile_navbar_link_hider() {
-            var x = document.getElementById("mobile_navbar_links");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-            } 
-        </script>
-    </div>
-</header>
-
+	<header>
+		<nav class="desktop_navbar">
+			<a href="#"><img class="desktop_navbar_logo_img" src="../media/image-removebg-preview.png" alt="logo"></a>
+			<a href="../index.html" class="desktop_navbar_link scroll">Trang chủ</a>
+			<a href="../faq/index.html" class="desktop_navbar_link ">Câu hỏi thường gặp(FAQ)</a>
+			<a href="../faq/rules.html" class="desktop_navbar_link ">Luật lệ</a>
+			<div class="desktop_navbar_link2_div">
+				<a href="#join" class="desktop_navbar_link2 scroll">Tham gia ngay!</a>
+			</div>
+		  </nav>
+	</header>
 <section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
 	<ul class="cd-faq__categories">
 		<li><a class="cd-faq__category cd-faq__category-selected truncate" href="#smp">Máy chủ SMP?</a></li>
@@ -140,12 +144,17 @@
 		</ul> <!-- cd-faq__content -->
 
 
-
 	<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
   
   <div class="cd-faq__overlay" aria-hidden="true"></div>
+
+  
 </section> <!-- cd-faq -->
 <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
 <script src="assets/js/main.js"></script> 
+<div class="home-button">
+    <a href="../index.html" class="home">Trang chủ</a>
+  </div>
+
 </body>
 </html>
